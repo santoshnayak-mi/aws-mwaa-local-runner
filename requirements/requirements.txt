@@ -1,4 +1,10 @@
---constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.3/constraints-3.11.txt"
-
-apache-airflow-providers-snowflake==5.8.0
-apache-airflow-providers-mysql==5.7.3
+apache-airflow-providers-trino==5.8.1
+apache-airflow-providers-microsoft-mssql==3.9.1
+airflow-dbt>=0.4.0
+protobuf
+dbt-core>=1.9.0
+dbt-sqlserver
+dbt-clickhouse
+boto3
+psutil
+airflow-clickhouse-plugin

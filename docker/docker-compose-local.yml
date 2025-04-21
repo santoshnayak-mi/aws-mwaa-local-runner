@@ -24,12 +24,13 @@ services:
     logging:
       options:
         max-size: 10m
-        max-file: "3"
+        max-file: "6"
     volumes:
       - "${PWD}/dags:/usr/local/airflow/dags"
       - "${PWD}/plugins:/usr/local/airflow/plugins"
       - "${PWD}/requirements:/usr/local/airflow/requirements"
       - "${PWD}/startup_script:/usr/local/airflow/startup"
+      - "${PWD}/logs:/usr/local/airflow/logs" 
     ports:
       - "8080:8080"
     command: local-runner

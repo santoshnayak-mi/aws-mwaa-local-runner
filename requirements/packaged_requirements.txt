@@ -1,0 +1,9 @@
+--find-links /usr/local/airflow/plugins
+--no-index
+apache-airflow-providers-trino==5.8.1
+apache-airflow-providers-microsoft-mssql==3.9.1
+airflow-dbt>=0.4.0
+protobuf
+dbt-core>=1.9.0
+dbt-sqlserver
+dbt-clickhouse
